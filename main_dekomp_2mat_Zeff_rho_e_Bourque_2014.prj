@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="D:\studia-embolie-el-hustota\final_package\main_dekomp_2mat_Zeff_rho_e_Bourque_2014.prj" location="D:\studia-embolie-el-hustota\final_package" name="main_dekomp_2mat_Zeff_rho_e_Bourque_2014" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="3184872685" file="D:\studia-embolie-el-hustota\final_package\Zeff_rho_e_decomp\main_dekomp_2mat_Zeff_rho_e_Bourque_2014.prj" location="D:\studia-embolie-el-hustota\final_package\Zeff_rho_e_decomp" name="main_dekomp_2mat_Zeff_rho_e_Bourque_2014" preferred-package-location="D:\studia-embolie-el-hustota\final_package\main_dekomp_2mat_Zeff_rho_e_Bourque_2014\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>main_dekomp_2mat_Zeff_rho_e_Bourque_2014</param.appname>
     <param.icon>${PROJECT_ROOT}\main_dekomp_2mat_Zeff_rho_e_Bourque_2014_resources\icon.ico</param.icon>
     <param.icons>
@@ -8,7 +8,7 @@
       <file>${PROJECT_ROOT}\main_dekomp_2mat_Zeff_rho_e_Bourque_2014_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\main_dekomp_2mat_Zeff_rho_e_Bourque_2014_resources\icon_16.png</file>
     </param.icons>
-    <param.version>1.0</param.version>
+    <param.version>1.1</param.version>
     <param.authnamewatermark>Samuel Holly</param.authnamewatermark>
     <param.email>samuel.holly@gmail.com</param.email>
     <param.company>JESSENIUS - diagnosticke centrum a.s.</param.company>
@@ -32,12 +32,12 @@
     <param.web.mcr>true</param.web.mcr>
     <param.package.mcr>false</param.package.mcr>
     <param.no.mcr>false</param.no.mcr>
-    <param.web.mcr.name>install_web-based</param.web.mcr.name>
+    <param.web.mcr.name>install</param.web.mcr.name>
     <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
     <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
     <param.windows.command.prompt>false</param.windows.command.prompt>
     <param.create.log>true</param.create.log>
-    <param.log.file>runtime_log.txt</param.log.file>
+    <param.log.file>log.txt</param.log.file>
     <param.native.matlab>false</param.native.matlab>
     <param.checkbox>false</param.checkbox>
     <param.example />
@@ -48,7 +48,6 @@
 	 -?  print help on how to use the application 
 	 input arguments</param.help.text>
     <unset>
-      <param.version />
       <param.authnamewatermark />
       <param.email />
       <param.company />
@@ -91,24 +90,34 @@
       <file>D:\studia-embolie-el-hustota\FLASH_100kV_Sn140kV_Catphan604_2nd_ord_fit.ck.mat</file>
       <file>D:\studia-embolie-el-hustota\FLASH_100kV_Sn140kV_Catphan604_3rd_ord_fit.ck.mat</file>
     </fileset.resources>
-    <fileset.package />
+    <fileset.package>
+      <file>D:\studia-embolie-el-hustota\ALPHA_120kV_Catphan604_2nd_ord_fit.bk.mat</file>
+      <file>D:\studia-embolie-el-hustota\ALPHA_120kV_Catphan604_2nd_ord_fit.ck.mat</file>
+      <file>D:\studia-embolie-el-hustota\ALPHA_120kV_Catphan604_3rd_ord_fit.ck.mat</file>
+      <file>D:\studia-embolie-el-hustota\ALPHA_140kV_Catphan604_2nd_ord_fit.ck.mat</file>
+      <file>D:\studia-embolie-el-hustota\ALPHA_140kV_Catphan604_3rd_ord_fit.ck.mat</file>
+      <file>D:\studia-embolie-el-hustota\APLHA_140kV_Catphan604_2nd_ord_fit.bk.mat</file>
+      <file>D:\studia-embolie-el-hustota\FLASH_100kV_Sn140kV_Catphan604_2nd_ord_fit.bk.mat</file>
+      <file>D:\studia-embolie-el-hustota\FLASH_100kV_Sn140kV_Catphan604_2nd_ord_fit.ck.mat</file>
+      <file>D:\studia-embolie-el-hustota\FLASH_100kV_Sn140kV_Catphan604_3rd_ord_fit.ck.mat</file>
+    </fileset.package>
     <fileset.depfun>
-      <file>D:\NIfTI_20140122\load_nii_ext.m</file>
-      <file>D:\NIfTI_20140122\load_nii_hdr.m</file>
-      <file>D:\NIfTI_20140122\load_untouch0_nii_hdr.m</file>
-      <file>D:\NIfTI_20140122\load_untouch_nii.m</file>
-      <file>D:\NIfTI_20140122\load_untouch_nii_hdr.m</file>
-      <file>D:\NIfTI_20140122\load_untouch_nii_img.m</file>
-      <file>D:\NIfTI_20140122\save_nii_ext.m</file>
-      <file>D:\NIfTI_20140122\save_untouch0_nii_hdr.m</file>
-      <file>D:\NIfTI_20140122\save_untouch_nii.m</file>
-      <file>D:\NIfTI_20140122\save_untouch_nii_hdr.m</file>
-      <file>D:\NIfTI_20140122\verify_nii_ext.m</file>
+      <file>D:\studia-embolie-el-hustota\NIfTI_20140122\load_nii_ext.m</file>
+      <file>D:\studia-embolie-el-hustota\NIfTI_20140122\load_nii_hdr.m</file>
+      <file>D:\studia-embolie-el-hustota\NIfTI_20140122\load_untouch0_nii_hdr.m</file>
+      <file>D:\studia-embolie-el-hustota\NIfTI_20140122\load_untouch_nii.m</file>
+      <file>D:\studia-embolie-el-hustota\NIfTI_20140122\load_untouch_nii_hdr.m</file>
+      <file>D:\studia-embolie-el-hustota\NIfTI_20140122\load_untouch_nii_img.m</file>
+      <file>D:\studia-embolie-el-hustota\NIfTI_20140122\save_nii_ext.m</file>
+      <file>D:\studia-embolie-el-hustota\NIfTI_20140122\save_untouch0_nii_hdr.m</file>
+      <file>D:\studia-embolie-el-hustota\NIfTI_20140122\save_untouch_nii.m</file>
+      <file>D:\studia-embolie-el-hustota\NIfTI_20140122\save_untouch_nii_hdr.m</file>
+      <file>D:\studia-embolie-el-hustota\NIfTI_20140122\verify_nii_ext.m</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\main_dekomp_2mat_Zeff_rho_e_Bourque_2014\for_testing" name="splash.png" optional="false">D:\studia-embolie-el-hustota\final_package\main_dekomp_2mat_Zeff_rho_e_Bourque_2014\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\main_dekomp_2mat_Zeff_rho_e_Bourque_2014\for_testing" name="readme.txt" optional="true">D:\studia-embolie-el-hustota\final_package\main_dekomp_2mat_Zeff_rho_e_Bourque_2014\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\main_dekomp_2mat_Zeff_rho_e_Bourque_2014\for_testing" name="main_dekomp_2mat_Zeff_rho_e_Bourque_2014.exe" optional="false">D:\studia-embolie-el-hustota\final_package\main_dekomp_2mat_Zeff_rho_e_Bourque_2014\for_testing\main_dekomp_2mat_Zeff_rho_e_Bourque_2014.exe</file>
+      <file location="${PROJECT_ROOT}\main_dekomp_2mat_Zeff_rho_e_Bourque_2014\for_testing" name="splash.png" optional="false">D:\studia-embolie-el-hustota\final_package\Zeff_rho_e_decomp\main_dekomp_2mat_Zeff_rho_e_Bourque_2014\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\main_dekomp_2mat_Zeff_rho_e_Bourque_2014\for_testing" name="main_dekomp_2mat_Zeff_rho_e_Bourque_2014.exe" optional="false">D:\studia-embolie-el-hustota\final_package\Zeff_rho_e_decomp\main_dekomp_2mat_Zeff_rho_e_Bourque_2014\for_testing\main_dekomp_2mat_Zeff_rho_e_Bourque_2014.exe</file>
+      <file location="${PROJECT_ROOT}\main_dekomp_2mat_Zeff_rho_e_Bourque_2014\for_testing" name="readme.txt" optional="true">D:\studia-embolie-el-hustota\final_package\Zeff_rho_e_decomp\main_dekomp_2mat_Zeff_rho_e_Bourque_2014\for_testing\readme.txt</file>
     </build-deliverables>
     <workflow />
     <matlab>
